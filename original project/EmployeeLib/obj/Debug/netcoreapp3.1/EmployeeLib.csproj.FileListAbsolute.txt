@@ -1,0 +1,12 @@
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\bin\Debug\netcoreapp3.1\EmployeeLib.deps.json
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\bin\Debug\netcoreapp3.1\EmployeeLib.dll
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\bin\Debug\netcoreapp3.1\EmployeeLib.pdb
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\bin\Debug\netcoreapp3.1\BookLib.dll
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\bin\Debug\netcoreapp3.1\BookLib.pdb
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.csproj.CopyComplete
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.dll
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\EmployeeLib\obj\Debug\netcoreapp3.1\EmployeeLib.pdb

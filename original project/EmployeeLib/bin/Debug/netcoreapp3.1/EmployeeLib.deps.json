@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "EmployeeLib/1.0.0": {
+        "dependencies": {
+          "BookLib": "1.0.0"
+        },
+        "runtime": {
+          "EmployeeLib.dll": {}
+        }
+      },
+      "BookLib/1.0.0": {
+        "runtime": {
+          "BookLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EmployeeLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

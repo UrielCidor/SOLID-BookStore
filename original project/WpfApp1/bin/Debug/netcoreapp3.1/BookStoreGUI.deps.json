@@ -1,0 +1,65 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BookStoreGUI/1.0.0": {
+        "dependencies": {
+          "BookLib": "1.0.0",
+          "EmployeeLib": "1.0.0",
+          "SalesLib": "1.0.0"
+        },
+        "runtime": {
+          "BookStoreGUI.dll": {}
+        }
+      },
+      "BookLib/1.0.0": {
+        "runtime": {
+          "BookLib.dll": {}
+        }
+      },
+      "EmployeeLib/1.0.0": {
+        "dependencies": {
+          "BookLib": "1.0.0"
+        },
+        "runtime": {
+          "EmployeeLib.dll": {}
+        }
+      },
+      "SalesLib/1.0.0": {
+        "dependencies": {
+          "BookLib": "1.0.0",
+          "EmployeeLib": "1.0.0"
+        },
+        "runtime": {
+          "SalesLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BookStoreGUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EmployeeLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SalesLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

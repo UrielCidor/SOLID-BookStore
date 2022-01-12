@@ -1,0 +1,9 @@
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\bin\Debug\netcoreapp3.1\BookLib.deps.json
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\bin\Debug\netcoreapp3.1\BookLib.dll
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\bin\Debug\netcoreapp3.1\BookLib.pdb
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\obj\Debug\netcoreapp3.1\BookLib.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\obj\Debug\netcoreapp3.1\BookLib.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\obj\Debug\netcoreapp3.1\BookLib.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\obj\Debug\netcoreapp3.1\BookLib.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\obj\Debug\netcoreapp3.1\BookLib.dll
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\original project\BookLib\obj\Debug\netcoreapp3.1\BookLib.pdb
