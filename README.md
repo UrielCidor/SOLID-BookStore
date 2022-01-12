@@ -19,43 +19,52 @@ DIAMOND project 1: reprogramming Book-Store project with SOLID principles
         <li>Logo and or front page image.</li>
         <li>Add login stage for manager/employee identification?</li>
       </ol>
-    <li>Inventory page:</li>
-      <ol><li>Search Panel:</li>
-        <ol>fields:
-        <li>select item type (book/journal)</li>
-        <li><ol>book fields:
-          <li>Title text box</li>
-          <li>Author text box</li>
-          <li>Publisher text box</li>
-          <li>ISBN text box</li>
-          <li>Publish date picker</li>
-          <li>Edition text box</li>
-          <li>Ganere comboBox</li>
-          <li>Price text box</li>
-          <li>Quantity text box</li>
-          <li>Discount text box</li>
-          </ol></li>
-        <li><ol>journal fields:
-          <li>Name text box</li>
-          <li>Publisher text box</li>
-          <li>Publish date picker</li>
-          <li>Type comboBox</li>
-          <li>Topic comboBox</li>
-          <li>Price text box</li>
-          <li>Quantity text box</li>
-          <li>Discount text box</li>
-          </ol></li>
+      <br>
+        <li>Inventory page:</li>
+        <ol>
+          <li>Search Panel:</li>
+          <ol>
+            <li>free text global search text box</li>
+            search fields:
+            <li>select item type (book/journal)</li>
+            book fields:
+            <li>Title text box</li>
+            <li>Author text box</li>
+            <li>Publisher text box</li>
+            <li>ISBN text box</li>
+            <li>Publish date picker</li>
+            <li>Edition text box</li>
+            <li>Ganere comboBox</li>
+            <li>Price text box</li>
+            <li>Quantity text box</li>
+            <li>Discount text box</li>
+            journal fields:
+            <li>Name text box</li>
+            <li>Publisher text box</li>
+            <li>Publish date picker</li>
+            <li>Type comboBox</li>
+            <li>Topic comboBox</li>
+            <li>Price text box</li>
+            <li>Quantity text box</li>
+            <li>Discount text box</li>
+          </ol>
+          <li>View Panel:</li>
+          <ol>
+            <li>list view of inventory and search results</li>
+            <li>click on item to open detail dialog box</li>
+          </ol>
+          <li>Excute Panel:</li>
       </ol>
-      <li>View Panel:</li>
-      <li>Excute Panel:</li>
-    </ol>
+          <br>
     <li>Employee Page:</li>
     <ol>
       <li>info panel</li>
       <li>info panel</li>
       <li>Excute panel</li>
     </ol>
+      <br>
     <li>Sales Page:</li>
+      <br>
     <li>Manager Page:</li>
   </ol>
 </ol>
