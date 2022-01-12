@@ -1,0 +1,198 @@
+﻿<Page x:Class="BookStoreGUI.ManagerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BookStoreGUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Manager Area">
+
+    <Grid Background="Aqua">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1">
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                    <Label Content="Choose Manager Employee: " Background="Beige"/>
+                    <ComboBox x:Name="managerListBox" ItemsSource="{Binding}" DisplayMemberPath="EmployeeName"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Name="NewItemGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="0.75*"/>
+                    <RowDefinition Height="3.5*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="21*"/>
+                        <ColumnDefinition Width="59*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Enter New Item To Supply" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="64,0,0,0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Button x:Name="bookPick" Content="Book" Click="bookPick_Click"/>
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Button x:Name="journalPick" Content="Journal"/>
+                    </Grid>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Column="0" Grid.Row="0">
+                            <TextBlock Text="Title: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="0">
+                            <TextBox x:Name="titleTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="1">
+                            <TextBlock Text="Author: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="1">
+                            <TextBox x:Name="authorTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="2">
+                            <TextBlock Text="Publisher: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="2">
+                            <TextBox x:Name="PublisherTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="3">
+                            <TextBlock Text="ISBN: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="3">
+                            <TextBox x:Name="ISBNTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="4">
+                            <TextBlock Text="Edition: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="4">
+                            <TextBox x:Name="editionTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="5">
+                            <TextBlock Text="Publish Date: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="5">
+                            <TextBox x:Name="PublishDateTxtBox" Text="dd/mm/yyyy" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Column="0" Grid.Row="6">
+                            <TextBlock Text="Ganere: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Grid.Row="6">
+                            <ComboBox x:Name="GanereListBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        
+                    </Grid>
+                    
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBlock Text="Price: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0" />
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBlock Text="Quantity: " VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,10,0"/>
+                        </Grid>
+                        
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <TextBox x:Name="priceTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <TextBox x:Name="quantityTxtBox" Width="80" Height="20" HorizontalAlignment="Left"/>
+                        </Grid>
+                        
+                    </Grid>
+                    <Grid Grid.Column="3">
+                        <Button x:Name="addToSupplyBtn" Content="Add To Supply" Background="OrangeRed" Click="addToSupplyBtn_Click"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <TextBlock Text="Sale Reports" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <TextBlock Text="Discounts" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+
+                <Grid Grid.Column="0" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Button x:Name="ShowAllSales" Content="Full Sales Report" Click="ShowAllSales_Click"/>
+
+                </Grid>
+                <Grid Grid.Row="2" Grid.ColumnSpan="2">
+                    <Button x:Name="newItem" Content="Enter New Item"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>
