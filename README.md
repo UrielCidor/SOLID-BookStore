@@ -1,78 +1,78 @@
 # SOLID-BookStore
-DIAMOND project 1: reprogramming Book-Store project with SOLID principles 
-
-## SRS:
-*Original -
-
-<ol>
-  <li>Program will manage books and journals for book store:</li>
-    <ol>
-      <li>Books info: Title, Author, ISBN, Publisher, Publishe date, Edition, Ganere, Price, Quantity, Discount.</li>
-      <li>Journals info: Journal Name, Publisher, Publish date, Journal Type, Journal Topic, Price, Quantity, Discount.</li>
-    </ol>
-  <li>Create, update and view items.</li>
-  <li> Data about books and journals items will be saved - no db. only save to binary file. </li>
-  <li>Preform search by items or by properties.</li>
-  <li> User Interface:</li>
-    <ol><li>Landing Page:</li>
-      <ol><li>Include navigation bar for Inventory page, Employee page, Sales Page, Manager Page</li>
-        <li>Logo and or front page image.</li>
-        <li>Add login stage for manager/employee identification?</li>
-      </ol>
-      <br>
-        <li>Inventory page:</li>
-        <ol>
-          <li>Search Panel:</li>
-          <ol>
-            <li>free text global search text box</li>
-            search fields:
-            <li>select item type (book/journal)</li>
-            book fields:
-            <li>Title text box</li>
-            <li>Author text box</li>
-            <li>Publisher text box</li>
-            <li>ISBN text box</li>
-            <li>Publish date picker</li>
-            <li>Edition text box</li>
-            <li>Ganere comboBox</li>
-            <li>Price text box</li>
-            <li>Quantity text box</li>
-            <li>Discount text box</li>
-            journal fields:
-            <li>Name text box</li>
-            <li>Publisher text box</li>
-            <li>Publish date picker</li>
-            <li>Type comboBox</li>
-            <li>Topic comboBox</li>
-            <li>Price text box</li>
-            <li>Quantity text box</li>
-            <li>Discount text box</li>
-          </ol>
-          <li>View Panel:</li>
-          <ol>
-            <li>list view of inventory and search results</li>
-            <li>click on item to open detail dialog box</li>
-          </ol>
-          <li>Excute Panel:</li>
-      </ol>
-          <br>
-    <li>Employee Page:</li>
-    <ol>
-      <li>info panel</li>
-      <li>info panel</li>
-      <li>Excute panel</li>
-    </ol>
-      <br>
-    <li>Sales Page:</li>
-      <br>
-    <li>Manager Page:</li>
-  </ol>
-</ol>
-
-  
-*Revised -
+DIAMOND project 1: reprogramming Book-Store project with SOLID principles
 
 ## Changes and new code:
-Dear Diary.... upload orginal project, find original srs, write new srs.
 
-## SOLID:
+To do: 
+- upload orginal project V
+- find original srs  V
+- write new srs.
+- 
+
+I divid the work to two issues:
+  - the project's new requirements (MVVM, DB) and old ones that weren't done (finish/improve UI, unite testing and exception handling)   
+  - reprogrmming my code following SOLID princeples
+
+Looking at the original project, it's actually not that bad... Starting with reprograming my classes in aim to get SQL DB going. 
+
+## SRS:
+*Original SRS*
+
+1. Program will manage books and journals for book store:
+    1. Books info: Title, Author, ISBN, Publisher, Publishe date, Edition, Ganere, Price, Quantity, Discount.
+    2. Journals info: Journal Name, Publisher, Publish date, Journal Type, Journal Topic, Price, Quantity, Discount.
+2. Create, update and view items.
+3. Data about books and journals items will be saved - no db. only save to binary file.
+4. Preform search by items or by properties.
+5. User Interface:
+    1. Landing Page:
+        1. Include navigation bar for Inventory page, Employee page, Sales Page, Manager Page
+        2. Logo and or front page image.
+        3. Add login stage for manager/employee identification?
+
+    2. Inventory page:
+        1. Search Panel:
+            1. clear fields from text button
+            2. reset search button
+            3. free text global search text box + search button
+
+            *search fields:*
+
+            4. select item type (book/journal) + search button
+            
+            *book fields:*
+            
+            5. Title text box + search button
+            6. Author text box + search button
+            7. Publisher text box + search button
+            8. ISBN text box + search button
+            9. Publish date picker + search button
+            10. Edition text box + search button
+            11. Ganere comboBox + search button
+            *journal fields:*
+            12. Name text box + search button
+            13. Publisher text box + search button
+            14. Publish date picker + search button
+            15. Type comboBox + search button
+            16. Topic comboBox + search button
+            *shared fields:*
+            17. Price text box + search button
+            18. Quantity text box + search button
+            19. Discount text box + search button
+        2. Excute Panel:
+            1. Add item to inventory button - validate data in fields and create new item
+        3. View Panel:
+            1. list view of inventory and search results
+            2. click on item to open detail dialog box
+
+    3. Employee Page:
+        1. info panel
+        2. info panel
+        3. Excute panel
+
+    4. Sales Page:
+
+    5. Manager Page:
+
+*Revised SRS*
+
