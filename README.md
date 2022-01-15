@@ -75,6 +75,43 @@ public class JournalTopic
         public IList<JournalProduct> Journals { get; set; }
     }
 ```
+DAL layer, DataContext class:
+```
+class DataContext : DbContext
+    {
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<JournalCategory> JournalCategories { get; set; }
+        public DbSet<JournalTopic> Topics { get; set; }
+        public DbSet<ProductCategory> Categories { get; set; }
+        public DbSet<ProductBase> Products { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\MSSQLLocalDB;Database=BookStoreDb;Trusted_Connection=True;");
+        }
+    }
+```
+DAL layer, Repository class. The repo pattern is another expample of **SRP** as dataContext class is responsible of creating context only and the repo for the context functionality. In adition to the **L**iskov substitution princple - *Functions* (`AddProduct()`, `DeleteProduct()`) *that reference to base classes must be able to use objects of derived classes without knowing it*. 
+```
+public class Repository
+    {
+        private readonly DataContext data = new();
+        
+        public IEnumerable<ProductBase> Products => data.Products;
+
+        public void AddProduct(ProductBase product)
+        {
+            data.Products.Add(product);
+            data.SaveChanges();
+        }
+        public void DeleteProduct(ProductBase product)
+        {
+            data.Products.Remove(product);
+            data.SaveChanges();
+        }
+    }
+```
+
 
 To do: 
 - upload orginal project V
@@ -150,7 +187,7 @@ To do:
 *Revised SRS*
 1. Product entity - PrroductBase. Properties:
   - Derived Classes:
-  1. BookProduct: Properties:
-  2. JournalProduct: Propertes: 
+    1. BookProduct: Properties:
+    2. JournalProduct: Propertes: 
 2. Services: DataService
-](url)
+
