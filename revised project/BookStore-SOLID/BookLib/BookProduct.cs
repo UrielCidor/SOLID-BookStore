@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace BookLib
 {
-    public class BookProduct : ProductBase, ISearchableBook, ISearchableItem
+    public class BookProduct : ProductBase
     {
         
         public string Title { get; private set; }
@@ -15,42 +15,20 @@ namespace BookLib
         public DateTime PublishDate { get; private set; }
         public IList<Genre> Genres{ get; set; }
 
-        public string getBookAuthor()
+        public override List<string> GetSearchFields()
         {
-            return Author;
+            List<string> searchFields = new List<string>();
+            searchFields.Add("Title");
+            searchFields.Add("Author");
+            searchFields.Add("Publisher");
+            searchFields.Add("ISBN");
+            searchFields.Add("Edition");
+            searchFields.Add("Published Date");
+            searchFields.Add("Genres");
+
+            return searchFields;
         }
 
-        public int getBookEdition()
-        {
-            return Edition;
-        }
-
-        public IList<Genre> getBookGanares()
-        {
-            return Genres;
-        }
-
-        public int getBookISBN()
-        {
-            return ISBN;
-        }
-
-        public DateTime getBookPublishDate()
-        {
-            return PublishDate;
-        }
-
-        public string getBookPublisher()
-        {
-            return Publisher;
-        }
-
-        public string getBookTitle()
-        {
-            return Title;
-        }
-
-        //public enum Genre { Horror, Advanture, Historical, Biography, Detactive, Science_Fiction, Classic, Noval }
     }
 
     public class Genre

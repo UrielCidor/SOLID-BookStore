@@ -6,4 +6,3 @@ C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\Bo
 C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\BookLib\bin\Debug\netcoreapp3.1\BookLib.pdb
 C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\BookLib\obj\Debug\netcoreapp3.1\BookLib.dll
 C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\BookLib\obj\Debug\netcoreapp3.1\BookLib.pdb
-C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\BookLib\obj\Debug\netcoreapp3.1\BookLib.csprojAssemblyReference.cache

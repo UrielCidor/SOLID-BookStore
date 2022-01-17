@@ -4,13 +4,16 @@ using System;
 
 namespace DbDal
 {
-    class DataContext : DbContext
+
+    //remove Idataservie to IRepository
+    //add IdataContext
+    public class DataContext : DbContext
 
     {
         public DbSet<Genre> Genres { get; set; }
         public DbSet<JournalCategory> JournalCategories { get; set; }
         public DbSet<JournalTopic> Topics { get; set; }
-        public DbSet<ProductCategory> Categories { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductBase> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -9,14 +9,20 @@ namespace DbDal
 {
     public class Repository
     {
-        private readonly DataContext data = new();
+        private readonly DataContext data = new DataContext();
+        
+        public IList<ProductBase> Products => data.Products.ToList();
+        public IList<ProductCategory> ProductCategories => data.ProductCategories.ToList();
+   
 
-        //public IEnumerable<BookItem> Books => data.Books;
-        //public IEnumerable<JournalItem> Journals => data.Journals;
-
-        public void AddBook(BookProduct book)
+        public void AddProduct(ProductBase product)
         {
-            //data.Books.Add(book);
+            data.Products.Add(product);
+            data.SaveChanges();
+        }
+        public void DeleteProduct(ProductBase product)
+        {
+            data.Products.Remove(product);
             data.SaveChanges();
         }
     }

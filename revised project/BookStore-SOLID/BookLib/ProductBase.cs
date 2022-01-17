@@ -1,10 +1,13 @@
 ﻿using BookLib.Infra;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Reflection;
 
 namespace BookLib
 {
-    abstract public class ProductBase : ISearchableItem
+    abstract public class ProductBase : IProduct
     {
         public int Id { get; private set; }
         public string ProductName { get; set; }
@@ -13,30 +16,36 @@ namespace BookLib
         public int Quantity { get; set; }
         public double Discount { get; set; }
 
-        public double getItemDiscount()
+        public abstract List<string> GetSearchFields();
+
+        public void Validate()
         {
-            return Discount;
+            throw new System.NotImplementedException();
         }
 
-        public int getId()
+        ProductCategory IProduct.Category()
         {
-            return Id;
+            throw new System.NotImplementedException();
         }
 
-        public double getItemPrice()
+        double IProduct.Discount()
         {
-            return Price;
+            throw new System.NotImplementedException();
         }
 
-        public int getItemQuantity()
+        double IProduct.Price()
         {
-            return Quantity;
+            throw new System.NotImplementedException();
         }
 
-
-        public ProductCategory GetCategory()
+        string IProduct.ProductName()
         {
-            return Category;
+            throw new System.NotImplementedException();
+        }
+
+        int IProduct.Quantity()
+        {
+            throw new System.NotImplementedException();
         }
     }
 
@@ -45,7 +54,7 @@ namespace BookLib
         public int Id { get; set; }
         public string CategoryName { get; set; }
 
-        public IList<ProductBase> Products { get; set; }
+        public virtual ObservableCollection<ProductBase> Products { get; private set; }
     }
 
 }

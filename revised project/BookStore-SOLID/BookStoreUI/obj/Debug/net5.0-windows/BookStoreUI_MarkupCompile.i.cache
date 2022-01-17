@@ -1,0 +1,20 @@
+﻿BookStoreUI
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\BookStoreUI\obj\Debug\net5.0-windows\
+BookStoreUI
+none
+false
+TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+C:\Users\USER\Desktop\YAHALOM\SOLID-BookStore\revised project\BookStore-SOLID\BookStoreUI\App.xaml
+31671883424
+
+10788443542
+221-1510712090
+MainWindow.xaml;Views\SearchResultView.xaml;Views\SearchView.xaml;
+
+False
+
